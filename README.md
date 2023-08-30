@@ -28,13 +28,13 @@ CREATE TABLE `products_stock` (
 ```
 4. Install the DYMO printer driver. I used the DYMO LabelWriter 450 Label Printer. If you have a different model, you can edit the label template file for your printer at `service/dymo/template.label`.
 5. Create WooCommerce Rest API keys:
-   - WooCommerce->Setting->Advance->REST API->Add Key
-   - Set permission to `Read/Write` then
-   - Click `Generate API Key`
+   - WooCommerce -> Setting -> Advance -> REST API -> Add Key
+   - Set permission to Read/Write then
+   - Click Generate API Key
    - Save `Consumer key` and `Consumer secret` for App setting
 
 ## Tweak this project
 It would be nice if the project could remove the background from product images using image processing.
 
-## Find a bug
+## Find a bug?
 If you found an issue or would like to submit an improvement to this project, please submit an issue using the issue tab above.
