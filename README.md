@@ -18,7 +18,7 @@ The app comprises 3 main functions: updating products in the ChromisPOS database
 ## Setup
 1. Set up your Apache and PHP environment, and then move the 'service' folder to the DocumentRoot path
 2. Install [Chromis POS](https://chromis.co.uk/) or you can edit the SQL query to match the database you require.
-3. Create a table name `product_stock` in chromispos database
+3. Create a table name product_stock in chromispos database
 ```sql
 CREATE TABLE `products_stock` (
   `ID` varchar(255) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE `products_stock` (
   `EXPIRATION` date DEFAULT '0000-00-00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
-4. Install the DYMO printer driver. I used the DYMO LabelWriter 450 Label Printer. If you have a different model, you can edit the label template file for your printer at `service/dymo/template.label`.
+4. Install the DYMO printer driver. I used the DYMO LabelWriter 450 Label Printer. If you have a different model, you can edit the label template file for your printer at service/dymo/template.label.
 5. Create WooCommerce Rest API keys:
    - WooCommerce -> Setting -> Advance -> REST API -> Add Key
    - Set permission to Read/Write then
